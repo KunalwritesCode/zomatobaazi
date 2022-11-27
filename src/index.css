@@ -124,3 +124,149 @@
     width: 80%;
  }
 }
+
+.container{
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.we_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.we_offer .card{
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    
+    overflow: hidden;
+}
+.we_offer .card:hover{
+    transform: scale(1.05);
+}
+
+.we_offer .card img{
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2{
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.we_offer .card p {
+    font-size: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.collection h1{
+    font-weight: 700;
+    
+}
+
+.sub_heading_container{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+
+}
+
+.sub_heading_container span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+}
+
+.collections_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.collections_card_container .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+.card1{
+    background: url(https://media.gqindia.com/wp-content/uploads/2014/09/cafe-mozaic_1.png);
+}
+.card2{
+    background: url(https://media.gqindia.com/wp-content/uploads/2014/09/cafe-mozaic_1.png);
+}
+.card3{
+    background: url(https://media.gqindia.com/wp-content/uploads/2014/09/cafe-mozaic_1.png);
+}
+.card4{
+    background: url(https://media.gqindia.com/wp-content/uploads/2014/09/cafe-mozaic_1.png);
+}
+
+.overlay{
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    border-radius: 10px;
+    background: linear-gradient(0deg,
+      rgba(0, 0, 0, 1) 0% ,
+      rgba(0, 0, 0, 0.05) 50% ,
+      rgba(0, 0, 0, 0.05) 85% 
+    );
+}
+
+.collections_card_container .card .content {
+    position :absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_the_app .semiContainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.get_the_app .semiContainer .left img{
+     width: 40%;
+     object-fit: cover;
+     object-position: center;
+}
+
+.get_the_app .semiContainer .right {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

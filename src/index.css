@@ -239,7 +239,7 @@
     font-size: 14px;
 }
 
-.get_the_app{
+.get__the_app{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,25 +248,128 @@
     padding: 3rem 6rem;
 }
 
-.get_the_app .semiContainer {
+.get__the_app .semiContainer {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
+    gap: 20px;
 }
 
-.get_the_app .semiContainer .left img{
-     width: 40%;
-     object-fit: cover;
-     object-position: center;
+.get__the_app .semiContainer .left{
+    
+    flex: 2;
 }
 
-.get_the_app .semiContainer .right {
+.get__the_app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    object-position: center;
+}
+
+.get__the_app .semiContainer .right {
     flex: 3;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.right h1{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.right p{
+    font-size: 12px;
+}
+.semiContainer .right .buttons_container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.semiContainer .right .buttons_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right .buttons_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 79 ,95);
+}
+
+.semiContainer .right .input_container{
+    display: flex;
+    gap: 8px;
+}
+
+.input_container button ,
+.input_container input{
+    padding: 10px 12px;
+}
+
+.input_container input{
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+    flex: auto;
+}
+
+.input_container button{
+    border: none;
+    background-color: rgb(239, 79 ,95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.right .download__app_container div{
+    display: flex;
+    gap: 16px;
+}
+
+.right .download__app_container div img{
+    width: 35%;
+}
+
+@media only screen 
+and (max-width : 1300px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right{
+        flex: 1;
+    }
+
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen 
+and (max-width : 900px){
+    .get__the_app{
+        padding: 32px;
+    }
+    .get__the_app .container{
+        width: 90%;
+    }
+}
+@media only screen 
+and (max-width : 700px){
+  .get__the_app {
+    padding: 3rem 0;
+   }
+  .get__the_app .semiContainer{
+    width: 80%;
+    flex-direction: column;
+  }
 }

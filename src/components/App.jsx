@@ -4,6 +4,7 @@ import Top from './Top'
 import WeOffer from './WeOffer' 
 import Collections from './Collections'
 import GetApp from './GetApp'
+import Footer from './Footer'
 
 
 
@@ -18,8 +19,9 @@ const App = () => {
     <WeOffer />
     <Collections />
     <GetApp />
-
-    </div>
+    <Footer />
+   </div>
+    
   </div>
     
     
